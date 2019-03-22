@@ -1,0 +1,218 @@
+
+/* HOME CSS */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #e0e0c7;
+  color: #303f4e;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 25px;
+  font-weight: 800;
+  font-size: 18px;
+  position: relative;
+}
+
+.col {
+  margin: 20px;
+}
+
+/* navbar */
+nav a:hover {
+  color: rgb(238, 238, 159) !important;
+  text-decoration: none !important;
+  transition: color 500ms !important;
+  -webkit-transition: color 600ms !important;
+}
+
+a.navbar-brand {
+  color: rgb(96, 141, 116) !important;
+}
+
+/* Carousel */
+
+.w-100 {
+  width: 100% !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.carousel-caption {
+  padding-top: 20px;
+  padding-bottom: 12%;
+}
+
+.carousel-caption h5 {
+  font-size: 24px;
+  font-weight: bold;
+  color: lightskyblue;
+}
+
+.carousel-caption p {
+  color: lightgoldenrodyellow;
+}
+
+.content {
+  margin: 50px auto;
+  padding: 50px;
+  text-align: center;
+}
+
+/* Button */
+
+.btn-success {
+  background-color: #9794c3;
+}
+.btn {
+  white-space: normal;
+}
+
+/* Three-Column with Rounded Images */
+
+.rounded-circle {
+  height: 180px;
+  width: 180px;
+  margin: 25px;
+  display: inline-block;
+}
+.row-three-col {
+  text-align: center;
+  margin: 15px;
+  padding: 25px;
+}
+
+.three-image-container {
+  margin-bottom: 75px;
+}
+
+/* ABOUT SECTION */
+
+.header h1 {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.image img {
+  width: 100%;
+  position: relative;
+  padding: 0 20px;
+}
+
+.intro {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.skills {
+  padding: 0 20px;
+  background-color: rgb(196, 181, 223);
+}
+
+.skills h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+#skill-list {
+  margin-left: 50px;
+  text-align: left;
+}
+
+.main-text {
+  padding: 60px 20px;
+}
+
+/* there are 3 container content: about section, portfolio 1 and 2 */
+.container-content {
+  padding-top: 90px;
+}
+
+@media (min-width: 768px) {
+  .modal-button button {
+    float: right;
+  }
+}
+
+/* CONTACT CSS */
+
+#contact {
+  background-image: url("../img/IMG_0323.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#contact-info {
+  text-align: left;
+}
+
+.bottom h5 {
+  margin: 10px;
+  color: rgb(61, 107, 61);
+}
+
+/* FAQ CSS */
+
+.faq_container {
+  margin: 100px 20px;
+}
+
+#faq_header {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.card-header {
+  background: rgb(157, 157, 165);
+}
+
+.card-header button {
+  color: #d4c48f;
+}
+
+.card-body {
+  font-size: 16px;
+}
+
+/* WORK SECTION CSS */
+
+.img-fluid {
+  margin: 20px auto;
+}
+
+#work_images a {
+  display: inline-block;
+  margin-bottom: 100px;
+}
+
+/* FOOTER */
+
+.video {
+  margin-bottom: 100px;
+}
+
+#copyright {
+  text-align: center;
+}
+
+.twitter-follow-button {
+  float: left;
+}
