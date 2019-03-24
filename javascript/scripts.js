@@ -71,10 +71,10 @@ $(document).ready(function() {
 
 // work section
 for (var i = 0; i < works.length; ++i) {
-  $("#work").append(
+  $("#work_images").append(
     "\
-  <div class='col-sm'>\
-    <img class='img-responsive' src='" +
+  <div class='col-xs-12 col-sm-6 col-lg-4 col-xl-3'>\
+    <img class='img-fluid' src='" +
       works[i] +
       "'>\
   </div>\
@@ -85,7 +85,7 @@ for (var i = 0; i < works.length; ++i) {
      <img class='img-fluid' src='" + works[i] + "'>\
     </div>\
   ");*/
-  var images = $("#work_images");
+  var images = $("#work_images img");
   if (i % 2 === 0) {
     $(images[i]).css("border", "2px solid DodgerBlue");
   } else {
