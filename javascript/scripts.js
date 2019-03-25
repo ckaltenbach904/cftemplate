@@ -71,24 +71,30 @@ $(document).ready(function() {
 
 // work section
 for (var i = 0; i < works.length; ++i) {
-  $("#work_images").append(
+  $("#work-images").append(
     "\
-  <div class='col-xs-12 col-sm-6 col-lg-4 col-xl-3'>\
-    <img class='img-fluid' src='" +
-      works[i] +
+    <div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>\
+      <a href='" +
+      works[i].url +
+      "' class='work-img'>\
+        <img class='img-fluid' src='" +
+      works[i].pic +
       "'>\
-  </div>\
+        <span class='info'><p class='proj-title'>Title: <br> " +
+      works[i].title +
+      "</p></span>\
+      </a>\
+    </div>\
   "
   );
-  /*$("#workrow2").append("\
-    <div class='col-xs-6 col-sm-6 col-lg-3 col-xl-3'>\
-     <img class='img-fluid' src='" + works[i] + "'>\
-    </div>\
-  ");*/
-  var images = $("#work_images img");
-  if (i % 2 === 0) {
-    $(images[i]).css("border", "2px solid DodgerBlue");
-  } else {
-    $(images[i]).css("border", "2px solid salmon");
-  }
 }
+
+//mouse hover over work picture to display title
+$(".work-img")
+  .mouseenter(function() {
+    //console.log(this);
+    $(".info", this).show();
+  })
+  .mouseleave(function() {
+    $(".info", this).hide();
+  });
