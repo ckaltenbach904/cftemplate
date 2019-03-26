@@ -74,27 +74,22 @@ for (var i = 0; i < works.length; ++i) {
   $("#work-images").append(
     "\
     <div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>\
-      <a href='" +
-      works[i].url +
-      "' class='work-img'>\
-        <img class='img-fluid' src='" +
+      <a href='https://www.gehbauer-schmerzweg.com/' 
+      class='work-img'>\
+      <img class='img-fluid' src='" +
       works[i].pic +
       "'>\
-        <span class='info'><p class='proj-title'>Title: <br> " +
-      works[i].title +
-      "</p></span>\
+        <span class='info'><p class='proj-title'>Title:</p> [First Project]
+        </span>\
       </a>\
     </div>\
-  "
-  );
+  ");
 }
 
-//mouse hover over work picture to display title
-$(".work-img")
-  .mouseenter(function() {
-    //console.log(this);
+  $(".work-img").mouseenter(function () {
     $(".info", this).show();
-  })
-  .mouseleave(function() {
+  }).mouseleave(function () {
     $(".info", this).hide();
   });
+}
+}); // End document ready

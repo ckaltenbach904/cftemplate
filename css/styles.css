@@ -197,12 +197,12 @@ a.navbar-brand {
   margin: 20px auto;
 }
 
-/*#work_images a {
+#work_images a {
   display: inline-block;
   margin-bottom: 100px;
-} */
+}
 
-#work_images a {
+.work-img {
   display: block;
   margin: auto;
   position: relative;
