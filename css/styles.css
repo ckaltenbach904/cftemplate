@@ -210,14 +210,16 @@ a.navbar-brand {
 
 .info {
   position: absolute;
-  top: 15%;
-  left: 22%;
+  top: 10px;
+  left: 0;
   color: #fff;
   font-family: Futura;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.5em;
   line-height: 1.6;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
 }
 
 .proj-title {

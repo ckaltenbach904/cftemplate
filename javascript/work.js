@@ -1,12 +1,13 @@
 var works = [
   {
     title: "First Project",
-    pic: "img/work5.jpg"
+    pic: "img/work5.jpg",
     url: "https://www.gehbauer-schmerzweg.com/"
   },
   {
     title: "Second Project",
-    pic: "img/work6.jpg"
+    pic: "img/work6.jpg",
+    url: "https://www.google.com/"
   },
   {
     title: "Third Project",

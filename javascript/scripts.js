@@ -67,29 +67,35 @@ $(document).ready(function() {
       $("#char-count").css("color", "black");
     }
   });
-});
 
-// work section
-for (var i = 0; i < works.length; ++i) {
-  $("#work-images").append(
-    "\
+  // work section
+  for (var i = 0; i < works.length; ++i) {
+    $("#portfolio-2-images").append(
+      "\
     <div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>\
-      <a href='https://www.gehbauer-schmerzweg.com/' 
-      class='work-img'>\
-      <img class='img-fluid' src='" +
-      works[i].pic +
-      "'>\
-        <span class='info'><p class='proj-title'>Title:</p> [First Project]
+      <a href='" +
+        works[i].url +
+        "'\
+        class='work-img'>\
+        <img class='img-fluid' src='" +
+        works[i].pic +
+        "'>\
+        <span class='info'>\
+          <p class='proj-title'>Title:" +
+        works[i].title +
+        "</p>\
         </span>\
       </a>\
     </div>\
-  ");
-}
+  "
+    );
+  }
 
-  $(".work-img").mouseenter(function () {
-    $(".info", this).show();
-  }).mouseleave(function () {
-    $(".info", this).hide();
-  });
-}
-}); // End document ready
+  $(".work-img")
+    .mouseenter(function() {
+      $(".info", this).show();
+    })
+    .mouseleave(function() {
+      $(".info", this).hide();
+    });
+});
