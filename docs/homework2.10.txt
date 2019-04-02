@@ -1,0 +1,23 @@
+What is an object literal, and how do you access its properties, including methods?
+
+object literal is the curly braces and it's contents. The object is storeds in a variable called kitten. So you 
+can call it kitten object
+
+for ex.
+
+var kitten = {
+  color: "orange",
+  favFoods: ["turkey", "tuna", "grapes"],
+  speak: function() { console.log("meow"); },
+  numberPaws: 4
+};
+
+kitten.sayHello = function () {
+  console.log("Hello! I am an " + this.color + " kitten!")
+};
+
+How does the this keyword in JavaScript work?
+
+in the above example, the this keyword is used to tell that is is using color properties is this object.
+
+

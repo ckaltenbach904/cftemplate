@@ -1,31 +1,24 @@
 /* HOME CSS */
-
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
 }
 html,
 body {
+  overflow-x: hidden;
   height: 100vh;
   width: 100vw;
   scroll-behavior: smooth;
-}
-
-body {
   background-color: #e0e0c7;
   color: #303f4e;
   font-family: "Poppins", sans-serif;
-  padding: 10px 25px;
   font-weight: 800;
-  font-size: 18px;
+  font-size: 16px;
   position: relative;
 }
-
-.col {
-  margin: 20px;
+img {
+  margin: 0 auto;
+  max-width: 100%;
 }
-
 /* navbar */
 nav a:hover {
   color: rgb(238, 238, 159) !important;
@@ -33,209 +26,132 @@ nav a:hover {
   transition: color 500ms !important;
   -webkit-transition: color 600ms !important;
 }
-
 a.navbar-brand {
   color: rgb(96, 141, 116) !important;
 }
-
 /* Carousel */
-
-.w-100 {
-  width: 100% !important;
-}
-
-.d-block {
-  display: block !important;
-}
-
-.carousel-caption {
-  padding-top: 20px;
-  padding-bottom: 12%;
-}
-
 .carousel-caption h5 {
   font-size: 24px;
   font-weight: bold;
   color: lightskyblue;
 }
-
 .carousel-caption p {
   color: lightgoldenrodyellow;
 }
-
-.content {
-  margin: 50px auto;
-  padding: 50px;
-  text-align: center;
-}
-
-/* Button */
-
+/* Buttons */
 .btn-success {
   background-color: #9794c3;
 }
-.btn {
-  white-space: normal;
+#intro {
+  text-align: center;
+  margin: 30px auto;
 }
-
-/* Three-Column with Rounded Images */
-
-.rounded-circle {
+/* Three-Columns */
+#three-col {
+  text-align: center;
+}
+.square-images {
   height: 180px;
   width: 180px;
   margin: 25px;
   display: inline-block;
 }
-.row-three-col {
-  text-align: center;
-  margin: 15px;
-  padding: 25px;
-}
-
-.three-image-container {
-  margin-bottom: 75px;
-}
-
 /* ABOUT SECTION */
-
 .header h1 {
   text-align: center;
   margin-top: 70px;
   margin-bottom: 50px;
 }
-
 .image img {
-  width: 100%;
-  position: relative;
   padding: 0 20px;
 }
-
 .intro {
   padding: 0 20px;
   text-align: center;
 }
-
 .skills {
   padding: 0 20px;
+  margin-right: 20px;
   background-color: rgb(196, 181, 223);
+  height: auto;
 }
-
 .skills h3 {
   text-align: center;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin: 20px 0;
 }
-
 #skill-list {
   margin-left: 50px;
   text-align: left;
 }
-
 .main-text {
   padding: 60px 20px;
 }
+/* WORK SECTION CSS */
 
-/* there are 3 container content: about section, portfolio 1 and 2 */
-.container-content {
-  padding-top: 90px;
+#work_images a {
+  display: inline-block;
+  margin-bottom: 100px;
 }
-
-@media (min-width: 768px) {
-  .modal-button button {
-    float: right;
-  }
+.work-img {
+  display: block;
+  margin: auto;
+  position: relative;
 }
-
+.info {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  color: #fff;
+  font-family: Futura;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.5em;
+  line-height: 1.6;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+.proj-title {
+  font-weight: 100;
+}
+.Portfolios {
+  text-align: center;
+  margin: 40px auto;
+}
 /* CONTACT CSS */
-
 #contact {
   background-image: url("../img/IMG_0323.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   padding: 50px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  display: flex !important;
+  height: auto;
 }
-
-#contact-info {
-  text-align: left;
+#map {
+  height: 400px;
+  width: 100%;
 }
-
-.bottom h5 {
-  margin: 10px;
-  color: rgb(61, 107, 61);
-}
-
 /* FAQ CSS */
-
-.faq_container {
-  margin: 100px 20px;
-}
-
 #faq_header {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 40px;
 }
-
 .card-header {
   background: rgb(157, 157, 165);
 }
-
 .card-header button {
   color: #d4c48f;
 }
-
-.card-body {
-  font-size: 16px;
-}
-
-/* WORK SECTION CSS */
-
-.img-fluid {
-  margin: 20px auto;
-}
-
-#work_images a {
-  display: inline-block;
-  margin-bottom: 100px;
-}
-
-.work-img {
-  display: block;
-  margin: auto;
-  position: relative;
-}
-
-.info {
-  position: absolute;
-  top: 10px;
-  left: 0;
-  color: #fff;
-  font-family: Futura;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 0.5em;
-  line-height: 1.6;
-  background: rgba(0, 0, 0, 0.6);
-  display: none;
-}
-
-.proj-title {
-  font-weight: 100;
-}
-
 /* FOOTER */
-
 .video {
   margin-bottom: 100px;
 }
-
+#video-col {
+  padding-right: 0;
+  padding-left: 0;
+}
 #copyright {
   text-align: center;
-}
-
-.twitter-follow-button {
-  float: left;
 }

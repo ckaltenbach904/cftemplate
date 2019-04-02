@@ -8,6 +8,8 @@ html,
 body {
   height: 100vh;
   width: 100vw;
+  font-family: monospace;
+  font-size: 16px;
 }
 
 .container {
@@ -29,6 +31,17 @@ body {
   width: 100%;
   outline: none;
   padding: 0 20px;
+  text-align: right;
+  font-size: 24px;
+}
+
+.clear-wrapper {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 10px 0 0;
 }
 
 .box {
@@ -46,4 +59,25 @@ body {
   display: flex;
   justify-content: center;
   margin: 20px 0;
+}
+
+.operands {
+}
+
+.operator {
+  background-color: #a88139;
+}
+
+.calculate-button {
+  background-color: #7c550b;
+}
+
+.clear-button {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background: tomato;
+  color: #fff;
 }
