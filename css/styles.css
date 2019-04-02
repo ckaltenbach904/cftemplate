@@ -13,7 +13,6 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-size: 16px;
-  position: relative;
 }
 img {
   margin: 0 auto;
@@ -87,6 +86,9 @@ a.navbar-brand {
 .main-text {
   padding: 60px 20px;
 }
+/*.tooltip {
+  position: fixed;
+}*/
 /* WORK SECTION CSS */
 
 #work_images a {

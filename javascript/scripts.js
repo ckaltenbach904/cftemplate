@@ -30,11 +30,12 @@ $(document).ready(function() {
   });
 
   // Tooltips
-  $(function() {
-    $("#item1").tooltip();
-    $("#item2").tooltip();
-    $('[data-toggle="tooltip"]').tooltip();
+  $("#item1").tooltip({
+    container: "body"
   });
+  $("#item2").tooltip();
+  $('[data-toggle="tooltip"]').tooltip();
+  console.log("Add tips");
 
   //Contact Form
   $("#button").on("click", function() {
@@ -120,11 +121,42 @@ function initMap() {
   };
   var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
+  var contentString =
+    '<div id="content">' +
+    '<div id="siteNotice">' +
+    "</div>" +
+    '<h3 id="firstHeading" class="firstHeading">My Home Office</h3>' +
+    '<div id="bodyContent">' +
+    "<p>I live and work here</p>" +
+    "</div>" +
+    "</div>";
+
+  var infoWindow = new google.maps.InfoWindow({
+    content: contentString
+  });
+
+  var image = "img/custom-marker.png";
+
   var marker = new google.maps.Marker({
     position: myLatlng,
-    title: "My office"
+    title: "My office",
+    animation: google.maps.Animation.DROP,
+    icon: image
   });
 
   // To add the marker to the map, call setMap();
   marker.setMap(map);
+
+  marker.addListener("click", function() {
+    infoWindow.open(map, marker);
+    toggleBounce();
+  });
+
+  function toggleBounce() {
+    if (marker.getAnimation() !== null) {
+      marker.setAnimation(null);
+    } else {
+      marker.setAnimation(google.maps.Animation.BOUNCE);
+    }
+  }
 }
