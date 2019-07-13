@@ -16,7 +16,7 @@ class Cat
         else
             puts "I'm full!" 
         end
-        @hungry
+        @hungry2
     end  
     def speak
         puts "Meow"
