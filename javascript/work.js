@@ -1,6 +1,6 @@
 var works = [
   {
-    title: "bootstrap template and ROR: git repos only",
+    title: "bootstrap&ROR: git repos only",
     pic: "img/work5.jpg",
     url: "https://github.com/ckaltenbach904/bootstrap1"
   },
