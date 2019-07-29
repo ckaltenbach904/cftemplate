@@ -1,20 +1,20 @@
 var works = [
   {
-    title: "First Project",
+    title: "bootstrap template and ROR: git repos only",
     pic: "img/work5.jpg",
-    url: "https://www.gehbauer-schmerzweg.com/"
+    url: "https://github.com/ckaltenbach904/bootstrap1"
   },
   {
-    title: "Second Project",
+    title: "second app: git repos only",
     pic: "img/work6.jpg",
-    url: "https://www.google.com/"
+    url: "https://github.com/ckaltenbach904/my_second_app"
   },
   {
-    title: "Third Project",
+    title: "coming soon",
     pic: "img/work7.jpg"
   },
   {
-    title: "Fourth Project",
+    title: "coming soon",
     pic: "img/work8.jpg"
   }
 ];
